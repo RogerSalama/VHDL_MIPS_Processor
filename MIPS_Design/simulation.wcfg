@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/FullPhase1(3)/ProcessorModuleTB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="alucontrolunitpackage" />
+            <top_module name="alupackage" />
+            <top_module name="branchaddpackage" />
+            <top_module name="branchpcpackage" />
+            <top_module name="branchshiftpackage" />
+            <top_module name="controllerpackage" />
+            <top_module name="controlunitpackage" />
+            <top_module name="datapathpackage" />
+            <top_module name="decoderpackage" />
+            <top_module name="dmempackage" />
+            <top_module name="floprpackage" />
+            <top_module name="imempackage" />
+            <top_module name="jumppcpackage" />
+            <top_module name="mipspackage" />
+            <top_module name="mux1package" />
+            <top_module name="mux2_3package" />
+            <top_module name="mux4package" />
+            <top_module name="mux5package" />
+            <top_module name="muxpackage" />
+            <top_module name="numeric_std" />
+            <top_module name="processormoduletb" />
+            <top_module name="programcounterpackage" />
+            <top_module name="registerfilepackage" />
+            <top_module name="signextenderpackage" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="81" />
+   <wvobject fp_name="/processormoduletb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/writedata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">writedata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">writedata[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/dataadr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataadr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataadr[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/memwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">memwrite</obj_property>
+      <obj_property name="ObjectShortName">memwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/pcm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pcm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pcm[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/regwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">regwrite</obj_property>
+      <obj_property name="ObjectShortName">regwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/read_sel1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_sel1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">read_sel1[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/read_sel2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_sel2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">read_sel2[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/write_sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_sel[4:0]</obj_property>
+      <obj_property name="ObjectShortName">write_sel[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/write_ena" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">write_ena</obj_property>
+      <obj_property name="ObjectShortName">write_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/write_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/data1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data1[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/data2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data2[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r1</obj_property>
+      <obj_property name="ObjectShortName">r1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r2</obj_property>
+      <obj_property name="ObjectShortName">r2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r3</obj_property>
+      <obj_property name="ObjectShortName">r3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r4</obj_property>
+      <obj_property name="ObjectShortName">r4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r5" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r5</obj_property>
+      <obj_property name="ObjectShortName">r5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r6" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r6</obj_property>
+      <obj_property name="ObjectShortName">r6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r7" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r7</obj_property>
+      <obj_property name="ObjectShortName">r7</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r8" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r8</obj_property>
+      <obj_property name="ObjectShortName">r8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r9" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r9</obj_property>
+      <obj_property name="ObjectShortName">r9</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r10" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r10</obj_property>
+      <obj_property name="ObjectShortName">r10</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r11" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r11</obj_property>
+      <obj_property name="ObjectShortName">r11</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r12" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r12</obj_property>
+      <obj_property name="ObjectShortName">r12</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r13" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r13</obj_property>
+      <obj_property name="ObjectShortName">r13</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r14" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r14</obj_property>
+      <obj_property name="ObjectShortName">r14</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r15" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r15</obj_property>
+      <obj_property name="ObjectShortName">r15</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r16" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r16</obj_property>
+      <obj_property name="ObjectShortName">r16</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r17" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r17</obj_property>
+      <obj_property name="ObjectShortName">r17</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r18" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r18</obj_property>
+      <obj_property name="ObjectShortName">r18</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r19" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r19</obj_property>
+      <obj_property name="ObjectShortName">r19</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r20" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r20</obj_property>
+      <obj_property name="ObjectShortName">r20</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r21" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r21</obj_property>
+      <obj_property name="ObjectShortName">r21</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r22" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r22</obj_property>
+      <obj_property name="ObjectShortName">r22</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r23" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r23</obj_property>
+      <obj_property name="ObjectShortName">r23</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r24" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r24</obj_property>
+      <obj_property name="ObjectShortName">r24</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r25" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r25</obj_property>
+      <obj_property name="ObjectShortName">r25</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r26" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r26</obj_property>
+      <obj_property name="ObjectShortName">r26</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r27" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r27</obj_property>
+      <obj_property name="ObjectShortName">r27</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r28" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r28</obj_property>
+      <obj_property name="ObjectShortName">r28</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r29" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r29</obj_property>
+      <obj_property name="ObjectShortName">r29</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r30" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r30</obj_property>
+      <obj_property name="ObjectShortName">r30</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r31" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r31</obj_property>
+      <obj_property name="ObjectShortName">r31</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/r32" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">r32</obj_property>
+      <obj_property name="ObjectShortName">r32</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out1[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out2[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out3[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out4[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out5[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out6" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out6[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out6[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out7" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out7[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out7[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out8" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out8[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out8[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out9" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out9[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out9[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out10" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out10[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out10[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out11" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out11[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out11[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out12" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out12[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out12[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out13" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out13[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out13[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out14" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out14[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out14[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out15" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out15[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out15[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out16" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out16[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out16[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out17" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out17[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out17[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out18" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out18[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out18[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out19" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out19[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out19[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out20" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out20[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out20[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out21" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out21[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out21[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out22" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out22[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out22[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out23" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out23[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out23[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out24" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out24[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out24[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out25" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out25[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out25[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out26" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out26[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out26[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out27" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out27[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out27[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out28" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out28[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out28[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out29" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out29[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out29[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out30" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out30[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out30[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out31" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out31[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out31[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/processormoduletb/uut/Mips/MainDataPath/RegFileRead/out32" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out32[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,196 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: ProgramCounter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ProgramCounter.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ProgramCounter"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : ProgramCounter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\FlopRPackage.vhd" into library work
+Parsing package <FlopRPackage>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\FlopR.vhd" into library work
+Parsing entity <FlopR>.
+Parsing architecture <Behavioral> of entity <flopr>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\ProgramCounter.vhd" into library work
+Parsing entity <ProgramCounter>.
+Parsing architecture <Behavioral> of entity <programcounter>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <ProgramCounter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <FlopR> (architecture <Behavioral>) from library <work>.
+ERROR:HDLCompiler:1401 - "E:\Xilinx\Xilinx\Projects\FullPhase1\ProgramCounter.vhd" Line 20: Signal NewPC[31] in unit ProgramCounter is connected to following multiple drivers:
+Driver 0: temp[31]_buf_2/o[31] driven by output signal Q[31] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[31] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[30] driven by output signal Q[30] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[30] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[29] driven by output signal Q[29] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[29] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[28] driven by output signal Q[28] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[28] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[27] driven by output signal Q[27] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[27] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[26] driven by output signal Q[26] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[26] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[25] driven by output signal Q[25] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[25] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[24] driven by output signal Q[24] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[24] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[23] driven by output signal Q[23] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[23] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[22] driven by output signal Q[22] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[22] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[21] driven by output signal Q[21] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[21] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[20] driven by output signal Q[20] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[20] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[19] driven by output signal Q[19] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[19] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[18] driven by output signal Q[18] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[18] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[17] driven by output signal Q[17] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[17] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[16] driven by output signal Q[16] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[16] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[15] driven by output signal Q[15] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[15] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[14] driven by output signal Q[14] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[14] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[13] driven by output signal Q[13] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[13] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[12] driven by output signal Q[12] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[12] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[11] driven by output signal Q[11] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[11] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[10] driven by output signal Q[10] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[10] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[9] driven by output signal Q[9] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[9] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[8] driven by output signal Q[8] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[8] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[7] driven by output signal Q[7] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[7] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[6] driven by output signal Q[6] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[6] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[5] driven by output signal Q[5] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[5] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[4] driven by output signal Q[4] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[4] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[3] driven by output signal Q[3] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[3] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[2] driven by output signal Q[2] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[2] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[1] driven by output signal Q[1] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[1] of instance Flip-flop (NewPC).
+Driver 0: temp[31]_buf_2/o[0] driven by output signal Q[0] of instance Flip-flop (temp[31]_buf_2).
+Driver 1: output signal NewPC[0] of instance Flip-flop (NewPC).
+--> 
+
+Total memory usage is 4479684 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

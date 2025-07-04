@@ -1,0 +1,5 @@
+vhdl work "ControlUnitPackage.vhd"
+vhdl work "ControlUnit.vhd"
+vhdl work "ALUControlUnitPackage.vhd"
+vhdl work "ALUControlUnit.vhd"
+vhdl work "Controller.vhd"

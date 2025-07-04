@@ -1,0 +1,83 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:/Xilinx/Xilinx/Projects/FullPhase1/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to E:/Xilinx/Xilinx/Projects/FullPhase1/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: RFormat.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\MUXPackage.vhd" into library work
+Parsing package <MUXPackage>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\MUX.vhd" into library work
+Parsing entity <MUX>.
+Parsing architecture <Behavioral> of entity <mux>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\FlopRPackage.vhd" into library work
+Parsing package <FlopRPackage>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\FlopR.vhd" into library work
+Parsing entity <FlopR>.
+Parsing architecture <Behavioral> of entity <flopr>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\DecoderPackage.vhd" into library work
+Parsing package <DecoderPackage>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\Decoder.vhd" into library work
+Parsing entity <Decoder>.
+Parsing architecture <Behavioral> of entity <decoder>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\RegisterFilePackage.vhd" into library work
+Parsing package <RegisterFilePackage>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\RegisterFile.vhd" into library work
+Parsing entity <registerfile>.
+Parsing architecture <Behavioral> of entity <registerfile>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\ALUPackage.vhd" into library work
+Parsing package <ALUPackage>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\RFormat.vhd" into library work
+Parsing entity <RFormat>.
+Parsing architecture <Behavioral> of entity <rformat>.
+ERROR:HDLCompiler:288 - "E:\Xilinx\Xilinx\Projects\FullPhase1\RFormat.vhd" Line 55: Cannot read from 'out' object regwrite ; use 'buffer' or 'inout'
+WARNING:HDLCompiler:439 - "E:\Xilinx\Xilinx\Projects\FullPhase1\RFormat.vhd" Line 55: Formal port write_ena of mode in cannot be associated with actual port regwrite of mode out
+ERROR:HDLCompiler:101 - "E:\Xilinx\Xilinx\Projects\FullPhase1\RFormat.vhd" Line 55: regwrite with mode 'out' cannot be read
+ERROR:HDLCompiler:69 - "E:\Xilinx\Xilinx\Projects\FullPhase1\RFormat.vhd" Line 56: <aluout> is not declared.
+ERROR:HDLCompiler:854 - "E:\Xilinx\Xilinx\Projects\FullPhase1\RFormat.vhd" Line 24: Unit <behavioral> ignored due to previous errors.
+VHDL file E:\Xilinx\Xilinx\Projects\FullPhase1\RFormat.vhd ignored due to errors
+--> 
+
+Total memory usage is 4472432 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

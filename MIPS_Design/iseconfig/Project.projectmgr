@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Project" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/BranchPC - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|BranchPC.vhd</ClosedNode>
+         <ClosedNode>/ControlUnit - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|ControlUnit.vhd/R - RFormat - Behavioral</ClosedNode>
+         <ClosedNode>/ControlUnit - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|ControlUnit.vhd/R - RFormat - Behavioral/RReg - registerfile - Behavioral</ClosedNode>
+         <ClosedNode>/ControlUnit - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|ControlUnit.vhd/R - RFormat - Behavioral/RRegWrite - registerfile - Behavioral</ClosedNode>
+         <ClosedNode>/DataPath - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|DataPath.vhd</ClosedNode>
+         <ClosedNode>/DataPath - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|DataPath.vhd/RegFileRead - registerfile - Behavioral</ClosedNode>
+         <ClosedNode>/MainModule - Behavioral E:|FullPhase1(3)|MainModule.vhd</ClosedNode>
+         <ClosedNode>/MainModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1(2)|MainModule.vhd</ClosedNode>
+         <ClosedNode>/MainModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|MainModule.vhd</ClosedNode>
+         <ClosedNode>/MainModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|MainModule.vhd/mainREG - registerfile - Behavioral</ClosedNode>
+         <ClosedNode>/MipsModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|MipsModule.vhd/BranchCount - BranchPC - Behavioral</ClosedNode>
+         <ClosedNode>/MipsModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|MipsModule.vhd/DataPath - DataPath - Behavioral</ClosedNode>
+         <ClosedNode>/MipsModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|MipsModule.vhd/FullControlUnit - Controller - Behavioral</ClosedNode>
+         <ClosedNode>/MipsModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|MipsModule.vhd/MainDataPath - DataPath - Behavioral</ClosedNode>
+         <ClosedNode>/MipsModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|MipsModule.vhd/RegFileRead - registerfile - Behavioral</ClosedNode>
+         <ClosedNode>/MipsModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|MipsModule.vhd/RegFileWrite - registerfile - Behavioral</ClosedNode>
+         <ClosedNode>/MipsModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|MipsModule.vhd/RegRead - registerfile - Behavioral</ClosedNode>
+         <ClosedNode>/MipsModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|MipsModule.vhd/RegWrite - registerfile - Behavioral</ClosedNode>
+         <ClosedNode>/ProcessorModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1(2)|ProcessorModule.vhd/Mips - MipsModule - Behavioral/FullControlUnit - Controller - Behavioral</ClosedNode>
+         <ClosedNode>/ProcessorModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1(2)|ProcessorModule.vhd/Mips - MipsModule - Behavioral/MainDataPath - DataPath - Behavioral/BranchCount - BranchPC - Behavioral</ClosedNode>
+         <ClosedNode>/ProcessorModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1(2)|ProcessorModule.vhd/Mips - MipsModule - Behavioral/MainDataPath - DataPath - Behavioral/RegFileRead - registerfile - Behavioral</ClosedNode>
+         <ClosedNode>/ProcessorModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|ProcessorModule.vhd/Mips - MipsModule - Behavioral/FullControlUnit - Controller - Behavioral</ClosedNode>
+         <ClosedNode>/ProcessorModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|ProcessorModule.vhd/Mips - MipsModule - Behavioral/MainDataPath - DataPath - Behavioral/BranchCount - BranchPC - Behavioral</ClosedNode>
+         <ClosedNode>/ProcessorModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|ProcessorModule.vhd/Mips - MipsModule - Behavioral/MainDataPath - DataPath - Behavioral/RegFileRead - registerfile - Behavioral</ClosedNode>
+         <ClosedNode>/RFormat - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|RFormat.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ProcessorModule - Behavioral (E:/FullPhase1(3)/ProcessorModule.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001c7000000020000000000000000000000000200000064ffffffff000000810000000300000002000001c70000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>ProcessorModule - Behavioral (E:/FullPhase1(3)/ProcessorModule.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>View RTL Schematic</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e70000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>View RTL Schematic</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000001d2000000040101000100000000000000000000000064ffffffff0000008100000000000000040000008900000001000000000000004300000001000000000000005d0000000100000000000000a90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ALU.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>FlopRPackage.vhd</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >18</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000e7000000010001000100000000000000000000000064ffffffff000000810000000000000001000000e70000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>FlopRPackage.vhd</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ProcessorModule - Behavioral E:|Xilinx|Xilinx|Projects|FullPhase1|ProcessorModule.vhd/Mips - MipsModule - Behavioral</ClosedNode>
+         <ClosedNode>/ProcessorModuleTB - behavior E:|FullPhase1(3)|ProcessorModuleTB.vhd/uut - ProcessorModule - Behavioral/Mips - MipsModule - Behavioral/MainDataPath - DataPath - Behavioral/BranchCount - BranchPC - Behavioral</ClosedNode>
+         <ClosedNode>/ProcessorModuleTB - behavior E:|FullPhase1(3)|ProcessorModuleTB.vhd/uut - ProcessorModule - Behavioral/Mips - MipsModule - Behavioral/MainDataPath - DataPath - Behavioral/RegFileRead - registerfile - Behavioral</ClosedNode>
+         <ClosedNode>/ProcessorModuleTB - behavior E:|Xilinx|Xilinx|Projects|FullPhase1(3)|ProcessorModuleTB.vhd/uut - ProcessorModule - Behavioral/Mips - MipsModule - Behavioral/FullControlUnit - Controller - Behavioral</ClosedNode>
+         <ClosedNode>/ProcessorModuleTB - behavior E:|Xilinx|Xilinx|Projects|FullPhase1(3)|ProcessorModuleTB.vhd/uut - ProcessorModule - Behavioral/Mips - MipsModule - Behavioral/MainDataPath - DataPath - Behavioral/BranchCount - BranchPC - Behavioral</ClosedNode>
+         <ClosedNode>/ProcessorModuleTB - behavior E:|Xilinx|Xilinx|Projects|FullPhase1(3)|ProcessorModuleTB.vhd/uut - ProcessorModule - Behavioral/Mips - MipsModule - Behavioral/MainDataPath - DataPath - Behavioral/RegFileRead - registerfile - Behavioral</ClosedNode>
+         <ClosedNode>/ProcessorModuleTB - behavior E:|Xilinx|Xilinx|Projects|FullPhase1|ProcessorModuleTB.vhd/uut - ProcessorModule - Behavioral/Mips - MipsModule - Behavioral/FullControlUnit - Controller - Behavioral</ClosedNode>
+         <ClosedNode>/ProcessorModuleTB - behavior E:|Xilinx|Xilinx|Projects|FullPhase1|ProcessorModuleTB.vhd/uut - ProcessorModule - Behavioral/Mips - MipsModule - Behavioral/MainDataPath - DataPath - Behavioral/BranchCount - BranchPC - Behavioral</ClosedNode>
+         <ClosedNode>/ProcessorModuleTB - behavior E:|Xilinx|Xilinx|Projects|FullPhase1|ProcessorModuleTB.vhd/uut - ProcessorModule - Behavioral/Mips - MipsModule - Behavioral/MainDataPath - DataPath - Behavioral/RegFileRead - registerfile - Behavioral</ClosedNode>
+         <ClosedNode>/mianTB - behavior E:|Xilinx|Xilinx|Projects|FullPhase1(3)|mianTB.vhd</ClosedNode>
+         <ClosedNode>/mianTB - behavior E:|Xilinx|Xilinx|Projects|FullPhase1|mianTB.vhd</ClosedNode>
+         <ClosedNode>/mianTB - behavior E:|Xilinx|Xilinx|Projects|FullPhase1|mianTB.vhd/uut - MainModule - Behavioral/mainREG - registerfile - Behavioral</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Control - ControlUnit - Behavioral (E:/FullPhase1(3)/ControlUnit.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001db000000020000000000000000000000000200000064ffffffff000000810000000300000002000001db0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Control - ControlUnit - Behavioral (E:/FullPhase1(3)/ControlUnit.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000012d0000009101000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+</Project>

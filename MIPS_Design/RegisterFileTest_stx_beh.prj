@@ -1,0 +1,8 @@
+vhdl isim_temp "MUXPackage.vhd"
+vhdl isim_temp "MUX.vhd"
+vhdl isim_temp "FlopRPackage.vhd"
+vhdl isim_temp "FlopR.vhd"
+vhdl isim_temp "DecoderPackage.vhd"
+vhdl isim_temp "Decoder.vhd"
+vhdl isim_temp "RegisterFile.vhd"
+vhdl isim_temp "../ph1 test/RegisterFileTest.vhd"

@@ -1,0 +1,64 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:/Xilinx/Xilinx/Projects/FullPhase1/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> Parameter xsthdpdir set to E:/Xilinx/Xilinx/Projects/FullPhase1/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Reading design: R.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\R-Format.vhd" into library work
+ERROR:HDLCompiler:104 - "E:\Xilinx\Xilinx\Projects\FullPhase1\R-Format.vhd" Line 4: Cannot find <registerfilepackage> in library <work>. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
+ERROR:HDLCompiler:104 - "E:\Xilinx\Xilinx\Projects\FullPhase1\R-Format.vhd" Line 5: Cannot find <alupackage> in library <work>. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
+Parsing entity <RFormat>.
+ERROR:HDLCompiler:854 - "E:\Xilinx\Xilinx\Projects\FullPhase1\R-Format.vhd" Line 8: Unit <rformat> ignored due to previous errors.
+ERROR:HDLCompiler:806 - "E:\Xilinx\Xilinx\Projects\FullPhase1\R-Format.vhd" Line 23: Syntax error near "signal".
+Parsing architecture <Behavioral> of entity <mainmodule>.
+ERROR:HDLCompiler:374 - "E:\Xilinx\Xilinx\Projects\FullPhase1\R-Format.vhd" Line 33: Entity <mainmodule> is not yet compiled.
+ERROR:HDLCompiler:69 - "E:\Xilinx\Xilinx\Projects\FullPhase1\R-Format.vhd" Line 38: <op1> is not declared.
+ERROR:HDLCompiler:69 - "E:\Xilinx\Xilinx\Projects\FullPhase1\R-Format.vhd" Line 40: <op2> is not declared.
+ERROR:HDLCompiler:69 - "E:\Xilinx\Xilinx\Projects\FullPhase1\R-Format.vhd" Line 42: <dest> is not declared.
+ERROR:HDLCompiler:69 - "E:\Xilinx\Xilinx\Projects\FullPhase1\R-Format.vhd" Line 45: <alu> is not declared.
+ERROR:HDLCompiler:69 - "E:\Xilinx\Xilinx\Projects\FullPhase1\R-Format.vhd" Line 46: <registerfile> is not declared.
+ERROR:HDLCompiler:69 - "E:\Xilinx\Xilinx\Projects\FullPhase1\R-Format.vhd" Line 47: <aluout> is not declared.
+VHDL file E:\Xilinx\Xilinx\Projects\FullPhase1\R-Format.vhd ignored due to errors
+--> 
+
+Total memory usage is 4470448 kilobytes
+
+Number of errors   :   11 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

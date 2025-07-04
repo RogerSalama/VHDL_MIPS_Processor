@@ -1,0 +1,109 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o E:/FullPhase1(3)/ProcessorModuleTB_isim_beh.exe -prj E:/FullPhase1(3)/ProcessorModuleTB_beh.prj work.ProcessorModuleTB 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "E:/FullPhase1(3)/MUXPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/MUX.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/FlopRPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/FlopR.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/DecoderPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/Decoder.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/BranchShiftPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/BranchShift.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/BranchAddPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/BranchAdd.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/SignExtenderPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/SignExtender.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/RegisterFilePackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/RegisterFile.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/ProgramCounterPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/MUX5Package.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/MUX4Package.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/MUX2_3Package.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/MUX2_3.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/MUX1Package.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/MUX1.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/JumpPCPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/JumpPC.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/ControlUnitPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/ControlUnit.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/BranchPCPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/BranchPC.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/ALUPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/ALUControlUnitPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/ALUControlUnit.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/ALU.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/DataPathPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/DataPath.vhd" into library work
+WARNING:HDLCompiler:946 - "E:/FullPhase1(3)/DataPath.vhd" Line 86: Actual for formal port sel is neither a static name nor a globally static expression
+Parsing VHDL file "E:/FullPhase1(3)/ControllerPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/Controller.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/MipsPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/MipsModule.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/InstrucMem.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/IMemPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/DMemPackage.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/DataMem.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/ProcessorModule.vhd" into library work
+Parsing VHDL file "E:/FullPhase1(3)/ProcessorModuleTB.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:794 - "E:/FullPhase1(3)/MUX.vhd" Line 50: Statement might not cover all choices ; 'others' clause recommended
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package mipspackage
+Compiling package imempackage
+Compiling package dmempackage
+Compiling package std_logic_arith
+Compiling package std_logic_signed
+Compiling package textio
+Compiling package std_logic_textio
+Compiling package controllerpackage
+Compiling package datapathpackage
+Compiling architecture behave of entity InstrucMem [instrucmem_default]
+Compiling package controlunitpackage
+Compiling package alucontrolunitpackage
+Compiling package programcounterpackage
+Compiling package mux1package
+Compiling package registerfilepackage
+Compiling package signextenderpackage
+Compiling package branchpcpackage
+Compiling package jumppcpackage
+Compiling package mux4package
+Compiling package mux5package
+Compiling package mux2_3package
+Compiling package alupackage
+Compiling package floprpackage
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity ControlUnit [controlunit_default]
+Compiling architecture behavioral of entity ALUControlUnit [alucontrolunit_default]
+Compiling architecture behavioral of entity Controller [controller_default]
+Compiling package muxpackage
+Compiling package decoderpackage
+Compiling package branchshiftpackage
+Compiling package branchaddpackage
+Compiling architecture behavioral of entity FlopR [flopr_default]
+Compiling architecture behavioral of entity MUX1 [mux1_default]
+Compiling architecture behavioral of entity MUX [mux_default]
+Compiling architecture behavioral of entity Decoder [decoder_default]
+Compiling architecture behavioral of entity registerfile [registerfile_default]
+Compiling architecture behavioral of entity SignExtender [signextender_default]
+Compiling architecture behavioral of entity BranchShift [branchshift_default]
+Compiling architecture behavioral of entity BranchAdd [branchadd_default]
+Compiling architecture behavioral of entity BranchPC [branchpc_default]
+Compiling architecture behavioral of entity JumpPC [jumppc_default]
+Compiling architecture behavioral of entity MUX2_3 [mux2_3_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity DataPath [datapath_default]
+Compiling architecture behavioral of entity MipsModule [mipsmodule_default]
+Compiling architecture behave of entity DataMem [datamem_default]
+Compiling architecture behavioral of entity ProcessorModule [processormodule_default]
+Compiling architecture behavior of entity processormoduletb
+Time Resolution for simulation is 1ps.
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\ProcessorModuleTB_isim_beh.exe.sim\libPortability.dll".
+Compiled 71 VHDL Units
+Built simulation executable E:/FullPhase1(3)/ProcessorModuleTB_isim_beh.exe
+Fuse Memory Usage: 39516 KB
+Fuse CPU Usage: 1717 ms

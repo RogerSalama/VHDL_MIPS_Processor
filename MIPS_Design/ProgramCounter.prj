@@ -1,0 +1,3 @@
+vhdl work "FlopRPackage.vhd"
+vhdl work "FlopR.vhd"
+vhdl work "ProgramCounter.vhd"

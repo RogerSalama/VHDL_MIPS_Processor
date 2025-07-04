@@ -1,0 +1,5 @@
+vhdl work "BranchShiftPackage.vhd"
+vhdl work "BranchShift.vhd"
+vhdl work "BranchAddPackage.vhd"
+vhdl work "BranchAdd.vhd"
+vhdl work "BranchPC.vhd"

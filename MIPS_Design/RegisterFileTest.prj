@@ -1,0 +1,8 @@
+vhdl work "MUXPackage.vhd"
+vhdl work "MUX.vhd"
+vhdl work "FlopRPackage.vhd"
+vhdl work "FlopR.vhd"
+vhdl work "DecoderPackage.vhd"
+vhdl work "Decoder.vhd"
+vhdl work "RegisterFile.vhd"
+vhdl work "../ph1 test/RegisterFileTest.vhd"

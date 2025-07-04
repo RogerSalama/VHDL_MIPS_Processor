@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "E:/Xilinx/Xilinx/Projects/FullPhase1/DataPath.xst" -ofn "E:/Xilinx/Xilinx/Projects/FullPhase1/DataPath.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Xilinx/Projects/FullPhase1/DataPath.xst" -ofn "E:/Xilinx/Xilinx/Projects/FullPhase1/DataPath.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Xilinx/Projects/FullPhase1/DataPath.xst" -ofn "E:/Xilinx/Xilinx/Projects/FullPhase1/DataPath.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Xilinx/Projects/FullPhase1/DataPath.xst" -ofn "E:/Xilinx/Xilinx/Projects/FullPhase1/DataPath.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Xilinx/Projects/FullPhase1/DataPath.xst" -ofn "E:/Xilinx/Xilinx/Projects/FullPhase1/DataPath.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Xilinx/Projects/FullPhase1/DataPath.xst" -ofn "E:/Xilinx/Xilinx/Projects/FullPhase1/DataPath.syr" 
+xst -intstyle ise -ifn "E:/Xilinx/Xilinx/Projects/FullPhase1(2)/DataPath.xst" -ofn "E:/Xilinx/Xilinx/Projects/FullPhase1(2)/DataPath.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 DataPath.ngc DataPath.ngd  

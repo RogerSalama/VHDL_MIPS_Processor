@@ -1,0 +1,850 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> Reading design: Controller.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Controller.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Controller"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : Controller
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\ControlUnitPackage.vhd" into library work
+Parsing package <ControlUnitPackage>.
+Parsing package body <ControlUnitPackage>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\ControlUnit.vhd" into library work
+Parsing entity <ControlUnit>.
+Parsing architecture <Behavioral> of entity <controlunit>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\ALUControlUnitPackage.vhd" into library work
+Parsing package <ALUControlUnitPackage>.
+Parsing package body <ALUControlUnitPackage>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\ALUControlUnit.vhd" into library work
+Parsing entity <ALUControlUnit>.
+Parsing architecture <Behavioral> of entity <alucontrolunit>.
+Parsing VHDL file "E:\Xilinx\Xilinx\Projects\FullPhase1\Controller.vhd" into library work
+Parsing entity <Controller>.
+Parsing architecture <Behavioral> of entity <controller>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Controller> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ControlUnit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALUControlUnit> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Controller>.
+    Related source file is "E:\Xilinx\Xilinx\Projects\FullPhase1\Controller.vhd".
+    Summary:
+	no macro.
+Unit <Controller> synthesized.
+
+Synthesizing Unit <ControlUnit>.
+    Related source file is "E:\Xilinx\Xilinx\Projects\FullPhase1\ControlUnit.vhd".
+WARNING:Xst:647 - Input <Inst<25:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <RegDst>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Jump>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Branch>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <MemRead>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUControl<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUControl<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <MemWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUSrc>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RegWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   9 Latch(s).
+	inferred  26 Multiplexer(s).
+Unit <ControlUnit> synthesized.
+
+Synthesizing Unit <ALUControlUnit>.
+    Related source file is "E:\Xilinx\Xilinx\Projects\FullPhase1\ALUControlUnit.vhd".
+WARNING:Xst:647 - Input <Inst<25:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUOp<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUOp<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUOp<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUOp<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   4 Latch(s).
+	inferred  27 Multiplexer(s).
+Unit <ALUControlUnit> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 13
+ 1-bit latch                                           : 13
+# Multiplexers                                         : 53
+ 1-bit 2-to-1 multiplexer                              : 53
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 53
+ 1-bit 2-to-1 multiplexer                              : 53
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <MemWrite> (without init value) has a constant value of 0 in block <ControlUnit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    ALUOp_0 in unit <ALUControlUnit>
+    ALUOp_1 in unit <ALUControlUnit>
+    ALUOp_3 in unit <ALUControlUnit>
+    ALUOp_2 in unit <ALUControlUnit>
+    RegWrite in unit <ControlUnit>
+    ALUSrc in unit <ControlUnit>
+    ALUControl_0 in unit <ControlUnit>
+    ALUControl_1 in unit <ControlUnit>
+    Branch in unit <ControlUnit>
+    Jump in unit <ControlUnit>
+    RegDst in unit <ControlUnit>
+    MemRead in unit <ControlUnit>
+
+
+Optimizing unit <Controller> ...
+
+Optimizing unit <ControlUnit> ...
+
+Optimizing unit <ALUControlUnit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Controller, actual ratio is 0.
+Latch Control/MemRead has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Controller.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 63
+#      GND                         : 1
+#      LUT3                        : 20
+#      LUT4                        : 8
+#      LUT5                        : 5
+#      LUT6                        : 28
+#      MUXF7                       : 1
+# FlipFlops/Latches                : 13
+#      LD                          : 13
+# IO Buffers                       : 24
+#      IBUF                        : 12
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               2  out of  126800     0%  
+ Number of Slice LUTs:                   61  out of  63400     0%  
+    Number used as Logic:                61  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     61
+   Number with an unused Flip Flop:      59  out of     61    96%  
+   Number with an unused LUT:             0  out of     61     0%  
+   Number of fully used LUT-FF pairs:     2  out of     61     3%  
+   Number of unique control sets:        11
+
+IO Utilization: 
+ Number of IOs:                          45
+ Number of bonded IOBs:                  24  out of    210    11%  
+    IOB Flip Flops/Latches:              11
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------+------------------------------+-------+
+Clock Signal                                    | Clock buffer(FF name)        | Load  |
+------------------------------------------------+------------------------------+-------+
+Control/ALUControl_1_G(Control/RegWrite_G:O)    | NONE(*)(Control/RegWrite)    | 2     |
+Control/ALUSrc_G(Control/ALUSrc_G:O)            | NONE(*)(Control/ALUSrc)      | 1     |
+Control/ALUControl_0_G(Control/ALUControl_0_G:O)| NONE(*)(Control/ALUControl_0)| 1     |
+Control/Branch_G(Control/Branch_G:O)            | NONE(*)(Control/Branch)      | 1     |
+Control/Jump_G(Control/Jump_G:O)                | NONE(*)(Control/Jump)        | 1     |
+Control/RegDst_G(Control/RegDst_G:O)            | NONE(*)(Control/RegDst)      | 1     |
+Control/MemRead_G(Control/MemRead_G:O)          | NONE(*)(Control/MemRead)     | 2     |
+ALUCont/ALUOp_0_G(ALUCont/ALUOp_0_G:O)          | NONE(*)(ALUCont/ALUOp_0)     | 1     |
+ALUCont/ALUOp_1_G(ALUCont/ALUOp_1_G:O)          | NONE(*)(ALUCont/ALUOp_1)     | 1     |
+ALUCont/ALUOp_3_G(ALUCont/ALUOp_3_G:O)          | NONE(*)(ALUCont/ALUOp_3)     | 1     |
+ALUCont/ALUOp_2_G(ALUCont/ALUOp_2_G:O)          | NONE(*)(ALUCont/ALUOp_2)     | 1     |
+------------------------------------------------+------------------------------+-------+
+(*) These 11 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 3.678ns
+   Maximum output required time after clock: 0.751ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Control/ALUControl_1_G'
+  Total number of paths / destination ports: 36 / 2
+-------------------------------------------------------------------------
+Offset:              1.512ns (Levels of Logic = 3)
+  Source:            Inst<26> (PAD)
+  Destination:       Control/RegWrite (LATCH)
+  Destination Clock: Control/ALUControl_1_G falling
+
+  Data Path: Inst<26> to Control/RegWrite
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   0.001   0.796  Inst_26_IBUF (Inst_26_IBUF)
+     LUT6:I0->O            3   0.097   0.521  Control/GND_6_o_PWR_6_o_AND_20_o1 (Control/GND_6_o_PWR_6_o_AND_20_o)
+     LUT3:I0->O            1   0.097   0.000  Control/RegWrite_D (Control/RegWrite_D)
+     LD:D                     -0.028          Control/RegWrite
+    ----------------------------------------
+    Total                      1.512ns (0.195ns logic, 1.317ns route)
+                                       (12.9% logic, 87.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Control/ALUSrc_G'
+  Total number of paths / destination ports: 18 / 1
+-------------------------------------------------------------------------
+Offset:              1.688ns (Levels of Logic = 3)
+  Source:            Inst<26> (PAD)
+  Destination:       Control/ALUSrc (LATCH)
+  Destination Clock: Control/ALUSrc_G falling
+
+  Data Path: Inst<26> to Control/ALUSrc
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   0.001   0.796  Inst_26_IBUF (Inst_26_IBUF)
+     LUT6:I0->O            2   0.097   0.697  Control/GND_6_o_PWR_6_o_AND_18_o1 (Control/GND_6_o_PWR_6_o_AND_18_o)
+     LUT6:I0->O            1   0.097   0.000  Control/ALUSrc_D (Control/ALUSrc_D)
+     LD:D                     -0.028          Control/ALUSrc
+    ----------------------------------------
+    Total                      1.688ns (0.195ns logic, 1.493ns route)
+                                       (11.6% logic, 88.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Control/ALUControl_0_G'
+  Total number of paths / destination ports: 6 / 1
+-------------------------------------------------------------------------
+Offset:              0.860ns (Levels of Logic = 2)
+  Source:            Inst<27> (PAD)
+  Destination:       Control/ALUControl_0 (LATCH)
+  Destination Clock: Control/ALUControl_0_G falling
+
+  Data Path: Inst<27> to Control/ALUControl_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   0.001   0.762  Inst_27_IBUF (Inst_27_IBUF)
+     LUT6:I0->O            3   0.097   0.000  Control/GND_6_o_PWR_6_o_AND_13_o1 (Control/ALUControl_0_D)
+     LD:D                     -0.028          Control/ALUControl_0
+    ----------------------------------------
+    Total                      0.860ns (0.098ns logic, 0.762ns route)
+                                       (11.4% logic, 88.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Control/Branch_G'
+  Total number of paths / destination ports: 18 / 1
+-------------------------------------------------------------------------
+Offset:              1.669ns (Levels of Logic = 3)
+  Source:            Inst<29> (PAD)
+  Destination:       Control/Branch (LATCH)
+  Destination Clock: Control/Branch_G falling
+
+  Data Path: Inst<29> to Control/Branch
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   0.001   0.771  Inst_29_IBUF (Inst_29_IBUF)
+     LUT6:I1->O            3   0.097   0.703  Control/GND_6_o_PWR_6_o_AND_14_o1 (Control/GND_6_o_PWR_6_o_AND_14_o)
+     LUT6:I0->O            1   0.097   0.000  Control/Branch_D (Control/Branch_D)
+     LD:D                     -0.028          Control/Branch
+    ----------------------------------------
+    Total                      1.669ns (0.195ns logic, 1.474ns route)
+                                       (11.7% logic, 88.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Control/Jump_G'
+  Total number of paths / destination ports: 12 / 1
+-------------------------------------------------------------------------
+Offset:              1.472ns (Levels of Logic = 3)
+  Source:            Inst<30> (PAD)
+  Destination:       Control/Jump (LATCH)
+  Destination Clock: Control/Jump_G falling
+
+  Data Path: Inst<30> to Control/Jump
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   0.001   0.762  Inst_30_IBUF (Inst_30_IBUF)
+     LUT6:I0->O            2   0.097   0.515  Control/GND_6_o_GND_6_o_AND_4_o1 (Control/GND_6_o_GND_6_o_AND_4_o)
+     LUT3:I0->O            1   0.097   0.000  Control/Jump_D (Control/Jump_D)
+     LD:D                     -0.028          Control/Jump
+    ----------------------------------------
+    Total                      1.472ns (0.195ns logic, 1.277ns route)
+                                       (13.2% logic, 86.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Control/RegDst_G'
+  Total number of paths / destination ports: 24 / 1
+-------------------------------------------------------------------------
+Offset:              1.557ns (Levels of Logic = 3)
+  Source:            Inst<28> (PAD)
+  Destination:       Control/RegDst (LATCH)
+  Destination Clock: Control/RegDst_G falling
+
+  Data Path: Inst<28> to Control/RegDst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            23   0.001   0.791  Inst_28_IBUF (Inst_28_IBUF)
+     LUT6:I0->O            4   0.097   0.570  Control/GND_6_o_GND_6_o_AND_2_o31 (Control/GND_6_o_GND_6_o_AND_2_o3)
+     LUT4:I0->O            1   0.097   0.000  Control/RegDst_D (Control/RegDst_D)
+     LD:D                     -0.028          Control/RegDst
+    ----------------------------------------
+    Total                      1.557ns (0.195ns logic, 1.362ns route)
+                                       (12.5% logic, 87.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Control/MemRead_G'
+  Total number of paths / destination ports: 24 / 2
+-------------------------------------------------------------------------
+Offset:              1.472ns (Levels of Logic = 3)
+  Source:            Inst<30> (PAD)
+  Destination:       Control/MemRead (LATCH)
+  Destination Clock: Control/MemRead_G falling
+
+  Data Path: Inst<30> to Control/MemRead
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   0.001   0.762  Inst_30_IBUF (Inst_30_IBUF)
+     LUT6:I0->O            2   0.097   0.515  Control/GND_6_o_GND_6_o_AND_8_o1 (Control/GND_6_o_GND_6_o_AND_8_o)
+     LUT3:I0->O            2   0.097   0.000  Control/MemRead_D (Control/MemRead_D)
+     LD:D                     -0.028          Control/MemRead
+    ----------------------------------------
+    Total                      1.472ns (0.195ns logic, 1.277ns route)
+                                       (13.2% logic, 86.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ALUCont/ALUOp_0_G'
+  Total number of paths / destination ports: 38 / 1
+-------------------------------------------------------------------------
+Offset:              2.876ns (Levels of Logic = 6)
+  Source:            Inst<31> (PAD)
+  Destination:       ALUCont/ALUOp_0 (LATCH)
+  Destination Clock: ALUCont/ALUOp_0_G falling
+
+  Data Path: Inst<31> to ALUCont/ALUOp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   0.001   0.625  Inst_31_IBUF (Inst_31_IBUF)
+     LUT4:I0->O            5   0.097   0.575  ALUCont/PWR_7_o_PWR_7_o_AND_33_o11 (ALUCont/PWR_7_o_PWR_7_o_AND_33_o1)
+     LUT4:I0->O            1   0.097   0.379  ALUCont/PWR_7_o_PWR_7_o_AND_34_o4_SW1 (N23)
+     LUT6:I4->O            1   0.097   0.295  ALUCont/PWR_7_o_GND_17_o_AND_30_o111_SW1 (N43)
+     LUT6:I5->O            2   0.097   0.515  ALUCont/PWR_7_o_PWR_7_o_AND_34_o4 (ALUCont/PWR_7_o_PWR_7_o_AND_34_o)
+     LUT3:I0->O            1   0.097   0.000  ALUCont/ALUOp_0_D (ALUCont/ALUOp_0_D)
+     LD:D                     -0.028          ALUCont/ALUOp_0
+    ----------------------------------------
+    Total                      2.876ns (0.486ns logic, 2.390ns route)
+                                       (16.9% logic, 83.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ALUCont/ALUOp_1_G'
+  Total number of paths / destination ports: 54 / 1
+-------------------------------------------------------------------------
+Offset:              3.085ns (Levels of Logic = 5)
+  Source:            Inst<29> (PAD)
+  Destination:       ALUCont/ALUOp_1 (LATCH)
+  Destination Clock: ALUCont/ALUOp_1_G falling
+
+  Data Path: Inst<29> to ALUCont/ALUOp_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   0.001   0.771  Inst_29_IBUF (Inst_29_IBUF)
+     LUT6:I1->O            5   0.097   0.712  ALUCont/PWR_7_o_PWR_7_o_OR_68_o_SW1 (N25)
+     LUT6:I0->O            2   0.097   0.697  ALUCont/PWR_7_o_PWR_7_o_OR_68_o (ALUCont/PWR_7_o_PWR_7_o_OR_68_o)
+     LUT6:I0->O            2   0.097   0.515  ALUCont/PWR_7_o_GND_17_o_AND_32_o1 (ALUCont/PWR_7_o_GND_17_o_AND_32_o)
+     LUT3:I0->O            1   0.097   0.000  ALUCont/ALUOp_1_D (ALUCont/ALUOp_1_D)
+     LD:D                     -0.028          ALUCont/ALUOp_1
+    ----------------------------------------
+    Total                      3.085ns (0.389ns logic, 2.696ns route)
+                                       (12.6% logic, 87.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ALUCont/ALUOp_3_G'
+  Total number of paths / destination ports: 44 / 1
+-------------------------------------------------------------------------
+Offset:              3.678ns (Levels of Logic = 7)
+  Source:            Inst<31> (PAD)
+  Destination:       ALUCont/ALUOp_3 (LATCH)
+  Destination Clock: ALUCont/ALUOp_3_G falling
+
+  Data Path: Inst<31> to ALUCont/ALUOp_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   0.001   0.625  Inst_31_IBUF (Inst_31_IBUF)
+     LUT4:I0->O            5   0.097   0.712  ALUCont/PWR_7_o_PWR_7_o_AND_33_o11 (ALUCont/PWR_7_o_PWR_7_o_AND_33_o1)
+     LUT6:I0->O            1   0.097   0.000  ALUCont/PWR_7_o_PWR_7_o_OR_68_o_SW3_F (N47)
+     MUXF7:I0->O           1   0.277   0.683  ALUCont/PWR_7_o_PWR_7_o_OR_68_o_SW3 (N27)
+     LUT5:I0->O            1   0.097   0.379  ALUCont/PWR_7_o_GND_17_o_AND_30_o111_SW2 (N45)
+     LUT6:I4->O            2   0.097   0.515  ALUCont/PWR_7_o_GND_17_o_AND_28_o1 (ALUCont/PWR_7_o_GND_17_o_AND_28_o)
+     LUT3:I0->O            1   0.097   0.000  ALUCont/ALUOp_3_D (ALUCont/ALUOp_3_D)
+     LD:D                     -0.028          ALUCont/ALUOp_3
+    ----------------------------------------
+    Total                      3.678ns (0.763ns logic, 2.915ns route)
+                                       (20.7% logic, 79.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ALUCont/ALUOp_2_G'
+  Total number of paths / destination ports: 34 / 1
+-------------------------------------------------------------------------
+Offset:              2.757ns (Levels of Logic = 5)
+  Source:            Inst<29> (PAD)
+  Destination:       ALUCont/ALUOp_2 (LATCH)
+  Destination Clock: ALUCont/ALUOp_2_G falling
+
+  Data Path: Inst<29> to ALUCont/ALUOp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   0.001   0.771  Inst_29_IBUF (Inst_29_IBUF)
+     LUT6:I1->O            5   0.097   0.702  ALUCont/PWR_7_o_PWR_7_o_OR_68_o_SW1 (N25)
+     LUT5:I0->O            1   0.097   0.379  ALUCont/PWR_7_o_GND_17_o_AND_30_o2_SW0 (N41)
+     LUT6:I4->O            2   0.097   0.515  ALUCont/PWR_7_o_GND_17_o_AND_30_o2 (ALUCont/PWR_7_o_GND_17_o_AND_30_o)
+     LUT3:I0->O            1   0.097   0.000  ALUCont/ALUOp_2_D (ALUCont/ALUOp_2_D)
+     LD:D                     -0.028          ALUCont/ALUOp_2
+    ----------------------------------------
+    Total                      2.757ns (0.389ns logic, 2.368ns route)
+                                       (14.1% logic, 85.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ALUCont/ALUOp_3_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            ALUCont/ALUOp_3 (LATCH)
+  Destination:       ALUOp<3> (PAD)
+  Source Clock:      ALUCont/ALUOp_3_G falling
+
+  Data Path: ALUCont/ALUOp_3 to ALUOp<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  ALUCont/ALUOp_3 (ALUCont/ALUOp_3)
+     OBUF:I->O                 0.000          ALUOp_3_OBUF (ALUOp<3>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ALUCont/ALUOp_2_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            ALUCont/ALUOp_2 (LATCH)
+  Destination:       ALUOp<2> (PAD)
+  Source Clock:      ALUCont/ALUOp_2_G falling
+
+  Data Path: ALUCont/ALUOp_2 to ALUOp<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  ALUCont/ALUOp_2 (ALUCont/ALUOp_2)
+     OBUF:I->O                 0.000          ALUOp_2_OBUF (ALUOp<2>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ALUCont/ALUOp_1_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            ALUCont/ALUOp_1 (LATCH)
+  Destination:       ALUOp<1> (PAD)
+  Source Clock:      ALUCont/ALUOp_1_G falling
+
+  Data Path: ALUCont/ALUOp_1 to ALUOp<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  ALUCont/ALUOp_1 (ALUCont/ALUOp_1)
+     OBUF:I->O                 0.000          ALUOp_1_OBUF (ALUOp<1>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ALUCont/ALUOp_0_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            ALUCont/ALUOp_0 (LATCH)
+  Destination:       ALUOp<0> (PAD)
+  Source Clock:      ALUCont/ALUOp_0_G falling
+
+  Data Path: ALUCont/ALUOp_0 to ALUOp<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  ALUCont/ALUOp_0 (ALUCont/ALUOp_0)
+     OBUF:I->O                 0.000          ALUOp_0_OBUF (ALUOp<0>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Control/RegDst_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            Control/RegDst (LATCH)
+  Destination:       RegDst (PAD)
+  Source Clock:      Control/RegDst_G falling
+
+  Data Path: Control/RegDst to RegDst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  Control/RegDst (Control/RegDst)
+     OBUF:I->O                 0.000          RegDst_OBUF (RegDst)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Control/Jump_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            Control/Jump (LATCH)
+  Destination:       Jump (PAD)
+  Source Clock:      Control/Jump_G falling
+
+  Data Path: Control/Jump to Jump
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  Control/Jump (Control/Jump)
+     OBUF:I->O                 0.000          Jump_OBUF (Jump)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Control/Branch_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            Control/Branch (LATCH)
+  Destination:       Branch (PAD)
+  Source Clock:      Control/Branch_G falling
+
+  Data Path: Control/Branch to Branch
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  Control/Branch (Control/Branch)
+     OBUF:I->O                 0.000          Branch_OBUF (Branch)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Control/MemRead_G'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            Control/MemRead_1 (LATCH)
+  Destination:       MemRead (PAD)
+  Source Clock:      Control/MemRead_G falling
+
+  Data Path: Control/MemRead_1 to MemRead
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  Control/MemRead_1 (Control/MemRead_1)
+     OBUF:I->O                 0.000          MemRead_OBUF (MemRead)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Control/ALUSrc_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            Control/ALUSrc (LATCH)
+  Destination:       ALUSrc (PAD)
+  Source Clock:      Control/ALUSrc_G falling
+
+  Data Path: Control/ALUSrc to ALUSrc
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  Control/ALUSrc (Control/ALUSrc)
+     OBUF:I->O                 0.000          ALUSrc_OBUF (ALUSrc)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Control/ALUControl_1_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            Control/RegWrite (LATCH)
+  Destination:       RegWrite (PAD)
+  Source Clock:      Control/ALUControl_1_G falling
+
+  Data Path: Control/RegWrite to RegWrite
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  Control/RegWrite (Control/RegWrite)
+     OBUF:I->O                 0.000          RegWrite_OBUF (RegWrite)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock ALUCont/ALUOp_0_G
+----------------------+---------+---------+---------+---------+
+                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------+---------+---------+---------+---------+
+Control/ALUControl_0_G|         |         |    1.858|         |
+Control/ALUControl_1_G|         |         |    2.433|         |
+----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ALUCont/ALUOp_1_G
+----------------------+---------+---------+---------+---------+
+                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------+---------+---------+---------+---------+
+Control/ALUControl_0_G|         |         |    2.378|         |
+Control/ALUControl_1_G|         |         |    2.559|         |
+----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ALUCont/ALUOp_2_G
+----------------------+---------+---------+---------+---------+
+                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------+---------+---------+---------+---------+
+Control/ALUControl_0_G|         |         |    1.898|         |
+Control/ALUControl_1_G|         |         |    1.780|         |
+----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ALUCont/ALUOp_3_G
+----------------------+---------+---------+---------+---------+
+                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------+---------+---------+---------+---------+
+Control/ALUControl_0_G|         |         |    2.162|         |
+Control/ALUControl_1_G|         |         |    2.437|         |
+----------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.47 secs
+ 
+--> 
+
+Total memory usage is 4689624 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
